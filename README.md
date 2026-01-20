@@ -75,8 +75,10 @@ docker compose up -d
 
 3. Accéder aux services :
 
-* Application Web : [http://localhost](http://localhost)
-* Interface Adminer : [http://localhost/adminer](http://localhost/adminer)
+* Frontend	http://localhost
+* API	http://localhost:3000/api/status
+* Adminer	http://localhost:8080 <img width="470" height="77" alt="image" src="https://github.com/user-attachments/assets/ebdc7e68-1cb2-4dde-87c7-6027a3747d7b" />
+
 
 4. Obtenir l'URL publique Cloudflare :
 
