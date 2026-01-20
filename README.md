@@ -104,7 +104,7 @@ Projet réalisé **en autonomie**, avec une démarche progressive :
 
 **Outils utilisés :**
 
-* ChatGPT
+* Capilote
 
 **Usage :**
 
