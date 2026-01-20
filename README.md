@@ -106,14 +106,12 @@ Projet réalisé **en autonomie**, avec une démarche progressive :
 
 **Usage :**
 
-* Génération et structuration du `docker-compose.yml`
 * Aide à la compréhension des concepts Docker, Cloudflare Tunnel et Caddy
 * Débogage d’erreurs de configuration
-* Rédaction et amélioration du README
 
 **Apprentissage :**
 
-L’IA a été utilisée comme un outil d’assistance. Les configurations ont été comprises, testées et ajustées manuellement afin de garantir une réelle maîtrise de l’architecture mise en place.
+L’IA a été utilisée comme un outil d’assistance. Les configurations ont été comprises, testées et ajustées manuellement
 
 
 
