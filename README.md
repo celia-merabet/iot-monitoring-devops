@@ -4,7 +4,7 @@
 >
 > * **Celia Merabet** (DevOps / Infra)
 
----
+
 
 ## 1. Présentation du Projet
 
@@ -28,7 +28,7 @@ L’accent est mis sur l’infrastructure et les bonnes pratiques DevOps plutôt
 **Screenshot de l'application déployée :**
 ![](screenshot.jpg)
 
----
+
 
 ## 2. Architecture Technique
 
@@ -49,7 +49,7 @@ L’accent est mis sur l’infrastructure et les bonnes pratiques DevOps plutôt
 | **Admin**    | `adminer`        | Administration BDD            | 8080         |
 | **Tunnel**   | `cloudflared`    | Exposition Internet sécurisée | N/A          |
 
----
+
 
 ## 3. Guide d'installation
 
@@ -85,7 +85,7 @@ docker compose up -d
 docker compose logs -f tunnel
 ```
 
----
+
 
 ## 4. Méthodologie & Transparence IA
 
@@ -116,7 +116,7 @@ Projet réalisé **en autonomie**, avec une démarche progressive :
 
 L’IA a été utilisée comme un outil d’assistance. Les configurations ont été comprises, testées et ajustées manuellement afin de garantir une réelle maîtrise de l’architecture mise en place.
 
----
+
 
 ## 5. Difficultés rencontrées & Solutions
 
@@ -132,7 +132,7 @@ L’IA a été utilisée comme un outil d’assistance. Les configurations ont �
 
   * **Solution :** Mise en place et configuration correcte du tunnel Cloudflare.
 
----
+
 
 ##  Conclusion
 
