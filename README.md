@@ -136,3 +136,21 @@ L’IA a été utilisée comme un outil d’assistance. Les configurations ont �
 ##  Conclusion
 
 Ce projet démontre la capacité à concevoir et déployer une **infrastructure DevOps micro-services complète**, sécurisée et conforme aux bonnes pratiques, répondant pleinement aux exigences du projet final.
+
+## Ressources & Liens Utiles
+Documentation officielle
+•	Docker : https://docs.docker.com/
+•	Docker Compose : https://docs.docker.com/compose/
+•	Node.js : https://nodejs.org/en/docs/
+•	PostgreSQL : https://www.postgresql.org/docs/
+•	Adminer : https://www.adminer.org/
+•	Caddy (reverse proxy) : https://caddyserver.com/docs/
+•	Cloudflare Tunnel (cloudflared) : https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/
+Tutoriels et guides utiles
+•	Docker + Node.js + PostgreSQL : https://node-postgres.com/
+•	Créer un Dockerfile pour Node.js : https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
+•	PlantUML pour diagrammes d’architecture : https://plantuml.com/fr/
+•	Exemples Docker Compose multi-services : https://docs.docker.com/compose/gettingstarted/
+Forums et communautés
+•	Stack Overflow : https://stackoverflow.com/
+
