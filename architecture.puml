@@ -1,0 +1,9 @@
+@startuml
+[Internet] --> [Cloudflare HTTPS]
+[Cloudflare HTTPS] --> [cloudflared]
+[cloudflared] --> [Caddy Reverse Proxy]
+[Caddy Reverse Proxy] --> [Frontend Nginx]
+[Caddy Reverse Proxy] --> [API Node.js]
+[API Node.js] --> [PostgreSQL DB]
+[Adminer] --> [PostgreSQL DB]
+@enduml
