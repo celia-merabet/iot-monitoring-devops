@@ -111,7 +111,7 @@ Projet réalisé **en autonomie**, avec une démarche progressive :
 
 **Apprentissage :**
 
-L’IA a été utilisée comme un outil d’assistance. Les configurations ont été comprises, testées et ajustées manuellement
+L’IA a été utilisée comme un outil d’assistance. Les configurations ont été comprises, testées et ajustées manuellement par moi
 
 
 
