@@ -36,7 +36,6 @@ L’accent est mis sur l’infrastructure et les bonnes pratiques DevOps plutôt
 
 *Ce schéma est généré dynamiquement à partir du fichier `architecture.puml` présent dans ce dépôt.*
 
-![Architecture du Projet](http://www.plantuml.com/plantuml/proxy?cache=no\&src=https://raw.githubusercontent.com/celia-merabet/iot-monitoring-devops/main/architecture.puml)
 
 ### Description des services
 
