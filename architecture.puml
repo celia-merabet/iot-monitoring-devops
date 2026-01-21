@@ -1,9 +1,30 @@
 @startuml
-[Internet] --> [Cloudflare HTTPS]
-[Cloudflare HTTPS] --> [cloudflared]
-[cloudflared] --> [Caddy Reverse Proxy]
-[Caddy Reverse Proxy] --> [Frontend Nginx]
-[Caddy Reverse Proxy] --> [API Node.js]
-[API Node.js] --> [PostgreSQL DB]
-[Adminer] --> [PostgreSQL DB]
+!theme sunlust
+title Architecture DevOps du Projet IoT Monitoring
+
+node "Docker Host" {
+    component "Cloudflared" as Tunnel #Orange
+    component "Caddy" as Proxy #Yellow
+
+    package "Internal Network" {
+        component "Frontend (Nginx)" as Web
+        component "API IoT (Node.js)" as API
+        component "PostgreSQL Database" as DB
+        component "Adminer" as Admin
+    }
+}
+
+cloud "Internet" {
+    actor User
+}
+
+User --> Tunnel : HTTPS
+Tunnel --> Proxy : HTTP
+
+Proxy --> Web : /
+Proxy --> API : /api
+Proxy --> Admin : /admin
+
+API --> DB
+Admin --> DB
 @enduml
