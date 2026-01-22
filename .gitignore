@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+
+# Environnements locaux
+.env
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+
+# Docker volumes (optionnel)
+docker-compose.override.yml
