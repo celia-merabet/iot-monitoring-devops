@@ -156,3 +156,16 @@ Tutoriels et guides utiles
 Forums et communautés
 •	Stack Overflow : https://stackoverflow.com/
 
+## Sécurité & Accès Cloudflare
+
+Ce projet est exposé publiquement via un **Cloudflare Quick Tunnel** (`trycloudflare.com`)
+dans un but de démonstration pédagogique.
+
+## Note :
+Google Chrome peut afficher un avertissement de type *"Site dangereux"*.
+Il s'agit d'un **faux positif connu** lié aux URLs temporaires `trycloudflare.com`
+et **non à une faille de sécurité du projet**.
+
+Le tunnel utilise bien :
+- HTTPS
+- Un reverse proxy (Caddy)
