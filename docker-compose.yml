@@ -5,13 +5,9 @@ services:
     image: nginx:alpine
     volumes:
       - ./frontend:/usr/share/nginx/html:ro
-    ports:
-    - "80:80" 
     restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "wget", "-q", "-O", "-", "http://localhost"]
-      interval: 30s
-      retries: 3
+    networks:
+      - internal
 
   api:
     image: node:18-alpine
@@ -20,13 +16,15 @@ services:
       - ./api:/app
     command: sh -c "npm install express && node index.js"
     environment:
-      - DB_HOST=db
-      - DB_USER=postgres
-      - DB_PASSWORD=postgres
-      - DB_NAME=iot
+      DB_HOST: db
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_NAME: iot
+    expose:
+      - "3000"
     restart: unless-stopped
-    ports:
-    - "3000:3000"
+    networks:
+      - internal
 
   db:
     image: postgres:15
@@ -37,12 +35,14 @@ services:
     volumes:
       - db_data:/var/lib/postgresql/data
     restart: unless-stopped
+    networks:
+      - internal
 
   adminer:
     image: adminer
     restart: unless-stopped
-    ports:
-    - "8080:8080"
+    networks:
+      - internal
 
   caddy:
     image: caddy:alpine
@@ -51,13 +51,12 @@ services:
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
     restart: unless-stopped
-
-  cloudflared:
-    image: cloudflare/cloudflared:latest
-    command: tunnel run
-    environment:
-      - TUNNEL_TOKEN=REPLACE_ME
-    restart: unless-stopped
+    networks:
+      - internal
 
 volumes:
   db_data:
+
+networks:
+  internal:
+    driver: bridge

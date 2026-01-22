@@ -1,4 +1,14 @@
 :80 {
-    reverse_proxy /api/* api:3000
-    reverse_proxy frontend:80
+
+    route /api/* {
+        reverse_proxy api:3000
+    }
+
+    route /admin* {
+        reverse_proxy adminer:8080
+    }
+
+    route {
+        reverse_proxy frontend:80
+    }
 }
