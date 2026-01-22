@@ -23,7 +23,8 @@ L’accent est mis sur l’infrastructure et les bonnes pratiques DevOps plutôt
 * Accès public sécurisé via HTTPS (Cloudflare Tunnel)
 
 **Lien accessible (si tunnel actif) :**
-[https://iot-monitoring-devops.trycloudflare.com](https://iot-monitoring-devops.trycloudflare.com)
+Lien public (Cloudflare Quick Tunnel) :  
+https://polls-schools-gates-organisation.trycloudflare.com
 
 **Screenshot de l'application déployée :**
 ![](screenshot.jpg)
