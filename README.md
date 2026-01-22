@@ -77,9 +77,12 @@ docker compose up -d
 
 3. Accéder aux services :
 
-* Frontend	http://localhost
-* API	http://localhost:3000/api/status
-* Adminer	http://localhost:8080
+* Frontend	[http://localhost](http://localhost)
+
+* API	[http://localhost:3000/api/status](http://localhost/api/status)
+
+* Adminer	[http://localhost:8080](http://localhost/admin)
+
 
 
 4. Obtenir l'URL publique Cloudflare :
